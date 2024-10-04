@@ -1,0 +1,25 @@
+defaults:
+  must_change_password: false
+  destroy:  false
+  comment: "Created by PROVISION TOOL"
+entries:
+  - first:  Rahul
+    last: Kumar
+    email: rahulkumar
+    destory:  false
+  - first:  Sunny
+    last: Singhal
+    email: sunnysinghal
+    destroy:  false
+  - first: ANDREW
+    last: WELLS
+    email: ANDREW.WELLS1
+    destroy: true
+  - first:  Pritam
+    last: Singh
+    email: pritamsingh
+    destroy:  false
+  - first:  PritamA
+    last: SinghA
+    email: pritamAsinghA
+    destroy:  false

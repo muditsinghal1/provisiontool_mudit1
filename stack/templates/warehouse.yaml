@@ -1,0 +1,34 @@
+warehouses:
+  - name: "{{name}}_{{abrv}}_WH"
+    properties:
+      WAREHOUSE_SIZE: "{{size}}"
+      AUTO_SUSPEND: "{{auto_suspend}}"
+      #STATEMENT_TIMEOUT_IN_SECONDS: {{statement_timeout_in_seconds}}
+
+roles:
+  - name: "{{name}}_{{abrv}}_WH_OPERATOR"
+  - name: "{{name}}_{{abrv}}_WH_USER"
+
+#roleGrants:
+#  - name: "{{name}}_{{abrv}}_WH_OPERATOR"
+#    roles:
+#      - SYSADMIN
+#  - name: "{{name}}_{{abrv}}_WH_USER"
+#      roles:
+#      - SYSADMIN
+
+privilegeGrants:
+  - privilege: "OPERATE,MONITOR,MODIFY,USAGE"
+    objectType: WAREHOUSE
+    objectName: "{{name}}_{{abrv}}_WH"
+    roleName:  "{{name}}_{{abrv}}_WH_OPERATOR"
+    grantOption: false
+  - privilege: "USAGE"
+    objectType: WAREHOUSE
+    objectName: "{{name}}_{{abrv}}_WH"
+    roleName:  "{{name}}_{{abrv}}_WH_USER"
+    grantOption: false
+
+
+
+

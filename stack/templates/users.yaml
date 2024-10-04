@@ -1,0 +1,14 @@
+users:
+  - name:  "{{first}}_{{last}}"
+    properties:
+      DISPLAY_NAME: "'{{first}} {{last}}'"
+      LOGIN_NAME: "'{{email}}@test.com'"
+      EMAIL:  "'{{email}}@test.com'"
+      DEFAULT_ROLE: "FU_{{first}}_{{last}}"
+      MUST_CHANGE_PASSWORD: "{{ must_change_password }}"
+      DEFAULT_WAREHOUSE: "COMPUTE_WH"
+      DEFAULT_NAMESPACE: "TESTDB.{{ first }}_{{ last }}"
+      FIRST_NAME: "{{ first}}"
+      LAST_NAME: "{{last}}"
+      COMMENT:  "{{comment}}"
+
