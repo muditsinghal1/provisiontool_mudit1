@@ -2,6 +2,7 @@ defaults:
   must_change_password: false
   destroy:  false
   comment: "Created by PROVISION TOOL"
+  default_role: null
 entries:
   - first:  Rahul
     last: Kumar
